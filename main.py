@@ -33,9 +33,11 @@ while True:
 				print ("Latitude: "+ str(response['lat']))
 				print ("Longitude: "+ str(response['lon']))
 				print("-" * 50)
-			except KeyError :
-				print ("IPv4 address " + IPv4 + " is private!")
+			except KeyError:
+				print (f"IPv4 address {IPv4} is private!")
 	except KeyboardInterrupt:
 		print ("\nExiting program")
 		time.sleep(2.5)
 		sys.exit()
+	except socket.gaierror:
+		print(f"\nIPv4 address is invalid!")
