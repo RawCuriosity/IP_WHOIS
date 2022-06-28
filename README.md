@@ -1,6 +1,6 @@
 # IP_WHOIS
 
 ## Requirements
-* Requests Module - You can get it with `pip install requests`
+Install the reqs with `pip -r requirments.txt` after cloning into the repo
 
 © RawCuriosity inc
