@@ -19,7 +19,7 @@ while True:
 		else:
 			try:
 				url = 'http://ip-api.com/json/' + IPv4
-				response = requests.get(url).json()
+				response = requests.get(url=url, headers={'User-Agent' : 'Prowser/1.0 ()'}).json()
 				if os.name == 'nt':
 					os.system('cls')
 				else:
