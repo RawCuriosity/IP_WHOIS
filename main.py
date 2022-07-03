@@ -12,7 +12,7 @@ while True:
 					return True
 			except:
 				return False
-		IPv4 = socket.gethostbyname (input ("Please enter the target's IPv4 adress: "))
+		IPv4 = socket.gethostbyname (input ("Please enter the target's IPv4 adress, DNS or hostname: "))
 		valid = check_IPv4(IPv4)
 		if valid == False:
 			print ("IPv4 address is invalid!")
