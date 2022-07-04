@@ -3,6 +3,7 @@ import socket
 import sys
 import time
 import os
+import platform
 
 while True:
 	try:
@@ -19,7 +20,7 @@ while True:
 		else:
 			try:
 				url = 'http://ip-api.com/json/' + IPv4
-				response = requests.get(url=url, headers={'User-Agent' : 'IP_WHOIS/1.0 ()'}).json()
+				response = requests.get(url=url, headers={'User-Agent' : 'IP_WHOIS/1.0 (' + platform.system() + ' ' + os.name().touppercase() + ')'}).json()
 				if os.name == 'nt':
 					os.system('cls')
 				else:
