@@ -4,15 +4,15 @@ import sys
 import time
 import os
 
+def check_IPv4(address):
+	try:
+		if socket.inet_aton(str(address)):
+			return True
+	except:
+		return False
 def main():
 	while True:
 		try:
-			def check_IPv4(address):
-				try:
-					if socket.inet_aton(str(address)):
-						return True
-				except:
-					return False
 			IPv4 = socket.gethostbyname (input ("Please enter the target's IPv4 adress, DNS or hostname: "))
 			valid = check_IPv4(IPv4)
 			if valid == False:
