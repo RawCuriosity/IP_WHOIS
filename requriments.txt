@@ -1,5 +1,1 @@
 requests
-socket
-sys
-time
-os
