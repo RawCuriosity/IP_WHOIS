@@ -4,6 +4,6 @@
 * Dose not work with most VPNs
 
 ## Requirements
-Install the reqs with `pip install -r requirments.txt` after cloning into the repo
+* Python and pip added to installed
 
-© RawCuriosity inc
+Install the package requirments with `pip install -r requirments.txt` after cloning into the repo
