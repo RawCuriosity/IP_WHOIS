@@ -1,7 +1,7 @@
 # IP_WHOIS
 
 ## Note
-* Dose not work with most VPNs
+* Does not work with most VPNs
 
 ## Requirements
 * Python and pip added to installed
